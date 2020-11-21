@@ -95,14 +95,6 @@ data "aws_s3_bucket" "s3_bucket_raw" {
   bucket = var.raw_bucket_name
 }
 
-data "aws_s3_bucket" "s3_bucket_clean" {
-   bucket = var.clean_bucket_name
-}
-
-data "aws_s3_bucket" "s3_bucket_pub" {
-
-  bucket = var.pub_bucket_name
-}
 ##################################################################################
 # CREATE SUBNET GROUP FOR DMS
 ##################################################################################
