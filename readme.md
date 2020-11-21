@@ -15,7 +15,7 @@
  4. Setup RAW S3 bucket and terraform Remote backend S3 bucket beforehand
  
  ## Usage
- - Modify terraform.tfvars to correct parametters: AWS Region, VPC, S3 buckets (raw bucket and remote state in main.tf)
+ - Modify `terraform.tfvars` to correct parametters: AWS Region, VPC, S3 buckets (raw bucket and remote state in main.tf)
  - Setup IAM policy to scope down access. The default provided list gives full-access to all necessary services (Glue, S3)
  - Setup source endpoint list:
     - each block is equivalent to 1 SQL or MySQL (or any database source of your choice, need to modify security group in DMS module though) database with target Glue database and designated S3 destination
