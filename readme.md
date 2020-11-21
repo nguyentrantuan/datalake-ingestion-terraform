@@ -6,13 +6,13 @@
 - Glue Crawler to capture data structure for S3 source, run daily
 
 ## Pre-requirements
- 1 - The source database needs to have its replication settings turned on 
- - SQL https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Source.SQLServer.html
- - MySQL https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Source.MySQL.html
- - etc.
- 2 - Networking between DMS and database servers should be setup before hand (like VPC, Subnet, etc.)
- 3 - Should have IAM admin role to create Policy and role
- 4 - Setup RAW S3 bucket and terraform Remote backend S3 bucket beforehand
+ 1. The source database needs to have its replication settings turned on 
+   - SQL https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Source.SQLServer.html
+   - MySQL https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Source.MySQL.html
+   - etc.
+ 2. Networking between DMS and database servers should be setup before hand (like VPC, Subnet, etc.)
+ 3. Should have IAM admin role to create Policy and role
+ 4. Setup RAW S3 bucket and terraform Remote backend S3 bucket beforehand
  
  ## Usage
  - Modify terraform.tfvars to correct parametters: AWS Region, VPC, S3 buckets (raw bucket and remote state in main.tf)
