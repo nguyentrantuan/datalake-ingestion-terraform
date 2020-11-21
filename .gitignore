@@ -1,0 +1,6 @@
+.terraform
+*.exe
+*.tfstate
+*.auto.tfvars
+*.backup
+.idea
