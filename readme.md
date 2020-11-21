@@ -6,7 +6,7 @@
 - Glue Crawler to capture data structure for S3 source, run daily
 
 ## Pre-requirements
- 1. The source database needs to have its replication settings turned on 
+ 1. The source database needs to have its replication settings turned on and have admin account
    - SQL https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Source.SQLServer.html
    - MySQL https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Source.MySQL.html
    - etc.
