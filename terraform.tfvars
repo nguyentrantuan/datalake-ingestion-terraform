@@ -17,10 +17,7 @@ list_glue_trusted_service = ["glue.amazonaws.com",
 
 list_glue_iam_roles = ["arn:aws:iam::aws:policy/service-role/AWSGlueServiceRole",
 	"arn:aws:iam::aws:policy/AWSLakeFormationDataAdmin",
-	"arn:aws:iam::aws:policy/AWSGlueConsoleSageMakerNotebookFullAccess",
 	"arn:aws:iam::aws:policy/AmazonS3FullAccess",
-	"arn:aws:iam::aws:policy/service-role/AWSGlueServiceNotebookRole",
-	"arn:aws:iam::aws:policy/AWSGlueConsoleFullAccess"
 ]
 
 
@@ -47,15 +44,12 @@ raw_bucket_name = "xxx-datalake-raw"
 
 source_s3_settings  = null
 
-source_elasticsearch_settings = null
 
-source_kinesis_settings = null
 endpoints_list = {
 	test-databasename2 = {
 		glue_database_name = "test_databasename2"
 		parent_directory = "parent_dicrectory"
 		database_name = "databasename2"
-		##Server name (DEV/TEST,TEST2, PROD1,PROD2,PILOT) follow by schema/database_name
 		target_subsequent_folder = "/test/databasename2"
 		endpoint_type = "source"
 		engine_name ="sqlserver"
